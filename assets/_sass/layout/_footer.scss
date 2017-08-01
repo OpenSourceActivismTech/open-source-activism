@@ -8,16 +8,22 @@
 
 	#footer {
 		.inner {
-			@include padding(5em, 0);
+
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			@include vendor('flex-wrap', 'wrap');
 			margin: 0 auto;
+			margin: _size(element-margin) auto _size(element-margin) auto;
+			padding: _size(element-margin) 0 0 0;
+			
 			width: _size(inner);
 
+			border-top: solid 2px _palette(border);
+/*
 			> * {
 				width: 100%;
 			}
+*/
 
 			form {
 				margin: 0 _size(section-spacing, large) 0 0;
@@ -28,13 +34,9 @@
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
 			}
 
-			.copyright {
-				border-top: solid 2px _palette(border);
-				list-style: none;
-				margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
-				padding: _size(element-margin) 0 0 0;
-				width: 100%;
 
+			.copyright {
+				margin-left: auto;
 				li {
 					border-left: solid 2px _palette(border);
 					color: _palette(fg-light);

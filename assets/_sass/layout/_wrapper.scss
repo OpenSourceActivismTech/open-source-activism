@@ -184,12 +184,13 @@
 			.content {
 				width: 100%;
 				-ms-flex: 2;
+				p { font-size: 1.2em; }
 			}
 
 			&:nth-child(2n - 1) {
 				.inner {
 					@include vendor('flex-direction', 'row-reverse');
-					text-align: right;
+					text-align: left;
 				}
 
 				.image {
