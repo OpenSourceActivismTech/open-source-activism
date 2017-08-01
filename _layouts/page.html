@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section id="wrapper">
+    <header>
+        <div class="inner">
+            {% if page.back_link %}<h1>{{page.back_link}}</h1>{%endif%}
+            <h2>{{page.title}}</h2>
+            <p>{{page.headline}}</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+        <div class="wrapper">
+            <div class="inner">
+                {{content}}
+            </div>
+        </div>
+</section>

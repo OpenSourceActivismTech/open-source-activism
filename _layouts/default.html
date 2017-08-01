@@ -32,7 +32,7 @@
                 <!-- Header -->
                 <header id="header">
                     {% if page.header %}{{page.header}}{%else%}
-                    <h1><a href="index.html">Open Source Activism</a></h1>
+                    <h1><a href="/">Open Source Activism</a></h1>
                     {%endif%}
                         <nav>
                             <a href="#menu">Menu</a>
@@ -45,11 +45,11 @@
                         <div class="inner">
                             <h2>Menu</h2>
                             <ul class="links">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="generic.html">Generic</a></li>
-                                <li><a href="elements.html">Elements</a></li>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="{{site.url}}/">Home</a></li>
+                                <li><a href="{{site.url}}/tools/">Tools</a></li>
+                                <li><a href="{{site.url}}/manifesto/">Manifesto</a></li>
+                                <li><a href="{{site.url}}/about/">About Us</a></li>
+                                <li><a href="{{site.url}}/contact/">Contact</a></li>
                             </ul>
                             <a href="#" class="close">Close</a>
                         </div>
@@ -60,28 +60,6 @@
                 <!-- Footer -->
                     <section id="footer">
                         <div class="inner">
-                            {% if page.footer_form %}
-                            <h2 class="major">Get in touch</h2>
-                            <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-                            <form method="post" action="#">
-                                <div class="field">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-                                <div class="field">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" />
-                                </div>
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="4"></textarea>
-                                </div>
-                                <ul class="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </form>
-                            {% endif %}
-
                             <ul class="icons">
                                 <li><a href="mailto:info@opensourceactivism.org" class="icon fa-envelope"><span class="label">Email</span></a></li>
                                 <li><a href="https://twitter.com/opensourceactivism" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -90,7 +68,7 @@
                             </ul>
                             
                             <ul class="copyright">
-                                <li class="fa-creative-commons">OpenSourceActivism.org</li>
+                                <li><a href="/" class="icon fa-creative-commons">&nbsp; OpenSourceActivism.org</a></li>
                                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                             </ul>
                         </div>
@@ -99,12 +77,16 @@
             </div>
 
         <!-- Scripts -->
-            <script src="{{ site.url }}/assets/js/skel.min.js"></script>
-            <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
-            <script src="{{ site.url }}/assets/js/jquery.scrollex.min.js"></script>
-            <script src="{{ site.url }}/assets/js/util.js"></script>
-            <!--[if lte IE 8]><script src="{{ site.url }}/assets/js/ie/respond.min.js"></script><![endif]-->
-            <script src="{{ site.url }}/assets/js/main.js"></script>
+            <script src="{{site.url}}/assets/js/skel.min.js"></script>
+            <script src="{{site.url}}/assets/js/jquery.min.js"></script>
+            <script src="{{site.url}}/assets/js/jquery.scrollex.min.js"></script>
+            <script src="{{site.url}}/assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="{{site.url}}/assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="{{site.url}}/assets/js/main.js"></script>
+
+            {% if page.extra_scripts %}
+            {{page.extra_scripts}}
+            {% endif %}
         {% include analytics.html %}
     </body>
 </html>
