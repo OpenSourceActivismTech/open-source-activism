@@ -9,8 +9,8 @@
         <title>OpenSourceActivism.org{%if page.title%} - {{page.title}}{%endif%}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="{{ site.url }}/assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css?d={{site.time | date: '%s'}}" />
+        <!--[if lte IE 8]><script src="{{site.url}}{{site.baseurl}}/assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/main.css?d={{site.time | date: '%s'}}" />
         <!--[if lte IE 9]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie9.css" /><![endif]-->
         <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie8.css" /><![endif]-->
 
@@ -45,11 +45,11 @@
                         <div class="inner">
                             <h2>Menu</h2>
                             <ul class="links">
-                                <li><a href="{{site.url}}/">Home</a></li>
-                                <li><a href="{{site.url}}/tools/">Tools</a></li>
-                                <li><a href="{{site.url}}/manifesto/">Manifesto</a></li>
-                                <li><a href="{{site.url}}/about/">About Us</a></li>
-                                <li><a href="{{site.url}}/contact/">Contact</a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/">Home</a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/tools/">Tools</a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/manifesto/">Manifesto</a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/about/">About Us</a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/contact/">Contact</a></li>
                             </ul>
                             <a href="#" class="close">Close</a>
                         </div>
@@ -77,12 +77,12 @@
             </div>
 
         <!-- Scripts -->
-            <script src="{{site.url}}/assets/js/skel.min.js"></script>
-            <script src="{{site.url}}/assets/js/jquery.min.js"></script>
-            <script src="{{site.url}}/assets/js/jquery.scrollex.min.js"></script>
-            <script src="{{site.url}}/assets/js/util.js"></script>
-            <!--[if lte IE 8]><script src="{{site.url}}/assets/js/ie/respond.min.js"></script><![endif]-->
-            <script src="{{site.url}}/assets/js/main.js"></script>
+            <script src="{{site.url}}{{site.baseurl}}/assets/js/skel.min.js"></script>
+            <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.min.js"></script>
+            <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.scrollex.min.js"></script>
+            <script src="{{site.url}}{{site.baseurl}}/assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="{{site.url}}{{site.baseurl}}/assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
 
             {% if page.extra_scripts %}
             {{page.extra_scripts}}
