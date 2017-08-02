@@ -31,6 +31,17 @@
 				position: relative;
 				width: calc(100% + #{3.5em});
 
+				&.fit {
+					width: 100%;
+					margin-left: 0;
+					margin-right: 0;
+				}
+
+				&.rect {
+					border-radius: 0;
+					img { border-radius: 0; }
+				}
+
 				img {
 					border-radius: _size(border-radius) _size(border-radius) 0 0;
 					width: 100%;

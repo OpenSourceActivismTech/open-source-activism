@@ -17,6 +17,11 @@
 			display: block;
 		}
 
+		&.rect {
+			border-radius: 0;
+			img { border-radius: 0; }
+		}
+
 		&.left,
 		&.right {
 			max-width: 40%;
