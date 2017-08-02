@@ -1,9 +1,13 @@
 ---
 layout: page
 title: Text Power
-headline: Text messaging flows for campaigns and organizations
+headline: Messaging flows for campaigns and organizations
 ---
 
-## Currently in beta
+## Interactive chatbots for activism 
+
+We built HelloVote with Fight for the Future in 2016, and helped over 160,000 Americans register and get ready to vote, with a 65% completion rate. We are now extending that experience to develop customized chat platforms including SMS, Facebook, Twitter, Telegram, and other conversational interfaces.
+
+### Currently in beta
 
 <a href="../../contact" class="special">Contact us to try it out</a>
