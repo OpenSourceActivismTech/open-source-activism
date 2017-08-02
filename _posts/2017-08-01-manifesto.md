@@ -16,20 +16,24 @@ When our technology is owned by a specific political party, that organization do
 
 We are non-partisan progressives who want all citizens to be engaged and represented in their democracy. While "the other side" could download our code and use it on their own, we won't provide hosting or support to people who don't believe in equality and justice for all. <a href="https://opensource.org/osd">Our copyleft license</a> also ensures that any changes must contributed back to the commons, which is a major barrier to abuse by big commercial interests.
 
-## Why not Off The Shelf Tools?
+## Why Not Off The Shelf Tools?
 
 If movement technology is owned by venture-backed companies, their incentive is to scale or sell user data to pay back their debt to investors seeking a high return. We have seen this happen time and again with organizing tools which were once affordable and innovative, and have become expensive and stale after acquisition or sale.
 
-There are some off-the-shelf tools for calling or marketing which can be re-purposed for activism, but the costs and incentives are not aligned with our politics. We find the prospect of using tools designed for debt-collection to advocate for progressive candidates too distasteful for 
+There are some off-the-shelf tools for calling or marketing which can be re-purposed for activism, but the costs and incentives are not aligned with our politics. We find the prospect of using tools designed for debt-collection to advocate for progressive candidates too distasteful. Our open tools are developed with our values, and our incentives align with our users.
 
 ## How Do I Get the Tools?
 
 All our source code and documentation is available at no cost on GitHub, where we develop our tools in the open with collaborative roadmaps. You can download and run tools yourself, or you can pay us to run and support them for a reasonable monthly fee. Our hosting is professional, secure, and reliable, and uses other open systems like Kubernetes and Ansible to ensure your tools are running smoothly and are always available for key moments.
 
+## Can I Change the Code?
+
+Yes! All our code is available for edits, refinements, and adjustments. We only ask that any changes you make are also released under the same license, so that the movement always has access to the best version of the tools. Go ahead and fork the code, or open an issue on our roadmap, and we'll work with you to integrate it back into the main repository.
+
 ## How Do You Make Money?
 
-Your support of our efforts ensures we can continue to share and support our work in the future. If you have ideas for other features and functionality, we can develop those with you and distribute updates to all users.
+Your support of our efforts ensures we can continue to share and support our work in the future. If you would like to see an additional feature, we can develop it with you and distribute updates to all users. We can also build custom tools to your specification, but we try to ensure that our work is reusable and applicable across campaigns.
 
-We are also actively looking for funding from foundations and large organizations to help kickstart new development of open tools before they are fully commercially viable.
+We are actively looking for funding from foundations and large organizations to help kickstart new development of open tools before they are fully commercially viable.
 
 <a href="{{site.url}}{{site.baseurl}}/contact/" class="special">Join us in the open source revolution</a>
