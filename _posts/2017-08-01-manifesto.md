@@ -32,4 +32,4 @@ Your support of our efforts ensures we can continue to share and support our wor
 
 We are also actively looking for funding from foundations and large organizations to help kickstart new development of open tools before they are fully commercially viable.
 
-<a href="{{site.url}}/contact/" class="special">Join us in the open source revolution</a>
+<a href="{{site.url}}{{site.baseurl}}/contact/" class="special">Join us in the open source revolution</a>
