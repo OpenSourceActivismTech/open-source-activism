@@ -20,7 +20,9 @@ We are non-partisan progressives who want all citizens to be engaged and represe
 
 If movement technology is owned by venture-backed companies, their incentive is to scale or sell user data to pay back their debt to investors seeking a high return. We have seen this happen time and again with organizing tools which were once affordable and innovative, and have become expensive and stale after acquisition or sale.
 
-There are some off-the-shelf tools for calling or marketing which can be re-purposed for activism, but the costs and incentives are not aligned with our politics. We find the prospect of using tools designed for debt-collection to advocate for progressive candidates too distasteful. Our open tools are developed with our values, and our incentives align with our users.
+There are some off-the-shelf tools for calling or marketing which can be re-purposed for activism, but their costs and incentives are not aligned with our politics. We find the prospect of using tools designed for debt-collection to advocate for progressive candidates distasteful. Our open tools are developed with our values, and our incentives align with our users.
+
+Commercially developed tools often fail to meet campaign needs for simple but powerful user interfaces, or require significant training for volunteers to get the hang of it. Our technology is developed in line with campaign needs, and with deep consultation and respect for movement work.
 
 ## How Do I Get the Tools?
 
@@ -34,6 +36,6 @@ Yes! All our code is available for edits, refinements, and adjustments. We only 
 
 Your support of our efforts ensures we can continue to share and support our work in the future. If you would like to see an additional feature, we can develop it with you and distribute updates to all users. We can also build custom tools to your specification, but we try to ensure that our work is reusable and applicable across campaigns.
 
-We are actively looking for funding from foundations and large organizations to help kickstart new development of open tools before they are fully commercially viable.
+We are actively looking for funding from foundations and large organizations to help kickstart new development of open tools before they are fully self-sustaining.
 
 <a href="{{site.url}}{{site.baseurl}}/contact/" class="special">Join us in the open source revolution</a>
