@@ -179,6 +179,11 @@
 					border-radius: 100%;
 					width: 100%;
 				}
+
+				&.square {
+					border-radius: 0;
+					img { border-radius: 0; }
+				}
 			}
 
 			.content {
