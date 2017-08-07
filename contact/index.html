@@ -1,17 +1,37 @@
 ---
 layout: page
 title: Contact Us
+extra_scripts: |
+    <script type='text/javascript'>
+    $('form').submit(function(event) {
+        if ($('#message').val()) {
+          // pull interests out of label text for checked inputs
+          // ugly!
+          var interests = $("#interests input[type=checkbox]:checked").map(function() {
+            return $('label[for="'+this.id+'"]').text();
+          }).get().join();
+          $.ajax({
+            url: "https://formspree.io/info@opensourceactivism.tech", 
+            method: "POST",
+            data: {
+                name: $('input[name=FNAME]').val()+' '+$('input[name=LNAME]').val(),
+                email: $('input[name=EMAIL]').val(),
+                organization: $('input[name=ORGNAME]').val(),
+                interest: interests,
+                message: $('textarea[name=message]').val(),
+            },
+            dataType: "json",
+          });
+        }
+    });
+    </script>
 ---
 
 <h2>We are just getting started</h2>
-<h3>But we need your help. Let us know:</h3>
-<ul>
-<li>How could more open technology help your campaigns win?</li>
-<li>What features would you like to build and share with the movement?</li>
-<li>How can you help us achieve our goal of open source tools for all?</li>
-</ul>
+<p>We are looking for developers, designers, user experience advocates, and allied organizations and campaigns to help us build open tools that push the field forward and are available to all.</p> 
 
-<div id="mc_embed_signup">
+<div id="mc_embed_signup" class="box">   
+    
     <form action="//xyz.us11.list-manage.com/subscribe/post?u=ec3363d24d5bbc1f9b600a120&amp;id=1c62fefe82" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="row uniform validate" target="_blank" novalidate>
     
     <div class="6u 12u$(xsmall)">
@@ -31,7 +51,7 @@ title: Contact Us
         <label for="mce-ORGNAME">Organization </label>
         <input type="text" value="" name="ORGNAME" class="" id="mce-ORGNAME">
     </div>
-    <div class="12u$">
+    <div class="12u$" id="interests">
         <label>Interest</label>
         <input type="checkbox" value="1" name="group[14465][1]" id="mce-group[14465]-14465-0" />
         <label for="mce-group[14465]-14465-0"> integrating one of our tools</label>
@@ -40,6 +60,18 @@ title: Contact Us
         <input type="checkbox" value="4" name="group[14465][4]" id="mce-group[14465]-14465-2" />
         <label for="mce-group[14465]-14465-2"> learning more about open source</label>
     </div>
+    
+    <div class="12u$">
+        <label for="message">Let us Know</label>
+        <ul>
+            <li>How could more open technology help your campaigns win?</li>
+            <li>What features would you like to build and share with the movement?</li>
+            <li>How can you help us achieve our goal of open source tools for all?</li>
+        </ul>
+
+        <textarea name="message" id="message" rows="4"></textarea>
+    </div>
+
     <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
@@ -48,7 +80,7 @@ title: Contact Us
     <div class="12u$">
         <!-- it's a trap! -->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec3363d24d5bbc1f9b600a120_1c62fefe82" tabindex="-1" value=""></div>
-        <input type="submit" value="Sign Up for More" name="subscribe" id="mc-embedded-subscribe" class="button" />
+        <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button" />
     </div>
     </form>
 </div>
