@@ -9,16 +9,16 @@
         <title>OpenSourceActivism.org{%if page.title%} - {{page.title}}{%endif%}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="{{site.url}}{{site.baseurl}}/assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/main.css?d={{site.time | date: '%s'}}" />
-        <!--[if lte IE 9]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie9.css" /><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}/assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="{{' /assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+        <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}?d={{site.time | date: '%s'}}" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/assets/css/ie9.css' | relative_url }}" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/assets/css/ie8.css' | relative_url }}" /><![endif]-->
 
-        <meta property="og:url"                content="http://opensourceactivism.org{{page.url}}" />
+        <meta property="og:url"                content="{{site.url}}{{site.base_url}}{{page.url}}" />
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="OpenSourceActivism" />
         <meta property="og:description"        content="{{page.title}}" />
-        <meta property="og:image"              content="{%if page.image%}{{page.image}}{%else%}http://opensourceactivism.org/images/fb-header.png{%endif%}" />
+        <meta property="og:image"              content="{%if page.image%}{{page.image}}{%else%}{{site.url}}{{site.baseurl}}/assets/images/fb-header.png{%endif%}" />
 
         {% if page.extra_head %}
             {{page.extra_head}}
@@ -32,7 +32,7 @@
                 <!-- Header -->
                 <header id="header">
                     {% if page.header %}{{page.header}}{%else%}
-                    <h1><a href="/">Open Source Activism</a></h1>
+                    <h1><a href="{{ '/' | relative_url }}">Open Source Activism</a></h1>
                     {%endif%}
                         <nav>
                             <a href="#menu">Menu</a>
@@ -45,11 +45,11 @@
                         <div class="inner">
                             <h2>Menu</h2>
                             <ul class="links">
-                                <li><a href="{{site.url}}{{site.baseurl}}/">Home</a></li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/tools/">Tools</a></li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/manifesto/">Manifesto</a></li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/about/">About Us</a></li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/contact/">Contact</a></li>
+                                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                                <li><a href="{{ 'tools' | relative_url }}">Tools</a></li>
+                                <li><a href="{{ 'manifesto' | relative_url }}">Manifesto</a></li>
+                                <li><a href="{{ 'about' | relative_url }}">About Us</a></li>
+                                <li><a href="{{ 'contact' | relative_url }}">Contact</a></li>
                             </ul>
                             <a href="#" class="close">Close</a>
                         </div>
@@ -77,12 +77,12 @@
             </div>
 
         <!-- Scripts -->
-            <script src="{{site.url}}{{site.baseurl}}/assets/js/skel.min.js"></script>
-            <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.min.js"></script>
-            <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.scrollex.min.js"></script>
-            <script src="{{site.url}}{{site.baseurl}}/assets/js/util.js"></script>
-            <!--[if lte IE 8]><script src="{{site.url}}{{site.baseurl}}/assets/js/ie/respond.min.js"></script><![endif]-->
-            <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
+            <script src="{{ '/assets/js/skel.min.js' | relative_url }}"></script>
+            <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+            <script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
+            <script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+            <!--[if lte IE 8]><script src="{{ '/assets/js/ie/respond.min.js' | relative_url }}"></script><![endif]-->
+            <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
             {% if page.extra_scripts %}
             {{page.extra_scripts}}

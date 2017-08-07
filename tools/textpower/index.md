@@ -10,4 +10,4 @@ We built [HelloVote](https://hello.vote) with Fight for the Future in 2016, and 
 
 ### Currently in beta
 
-<a href="../../contact" class="special">Contact us to try it out</a>
+<a href="{{ 'contact/' | relative_url }}" class="special">Contact us to try it out</a>

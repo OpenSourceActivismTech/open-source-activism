@@ -8,4 +8,4 @@ Using knowledge learned in the 2016 Democratic primaries and by Avaaz in the 201
 
 ### Currently under development
 
-<a href="../../contact" class="special">Contact us to join the pilot</a>
+<a href="{{ 'contact/' | relative_url }}" class="special">Contact us to join the pilot</a>
