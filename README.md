@@ -1,6 +1,6 @@
-# OpenSourceActivsm.org Site
+# OpenSourceActivsm.tech Site
 
-* Content (cc) OpenSourceActivism.org
+* Content (cc) OpenSourceActivism.tech
 * Icons (cc) [Ruth Miller](https://www.ruthmiller.net), [Jems Mayor](https://thenounproject.com/jum/)
 * Design (cc) [ajlkn](https://html5up.net/solid-state)
 * Fonts (cc) [Matt McKinerney](https://github.com/theleagueof/raleway), [Steve Matteson](http://www.opensans.com)
