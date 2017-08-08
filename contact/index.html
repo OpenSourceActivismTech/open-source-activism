@@ -4,25 +4,23 @@ title: Contact Us
 extra_scripts: |
     <script type='text/javascript'>
     $('form').submit(function(event) {
-        if ($('#message').val()) {
-          // pull interests out of label text for checked inputs
-          // ugly!
-          var interests = $("#interests input[type=checkbox]:checked").map(function() {
-            return $('label[for="'+this.id+'"]').text();
-          }).get().join();
-          $.ajax({
-            url: "https://formspree.io/info@opensourceactivism.tech", 
-            method: "POST",
-            data: {
-                name: $('input[name=FNAME]').val()+' '+$('input[name=LNAME]').val(),
-                email: $('input[name=EMAIL]').val(),
-                organization: $('input[name=ORGNAME]').val(),
-                interest: interests,
-                message: $('textarea[name=message]').val(),
-            },
-            dataType: "json",
-          });
-        }
+        // send answers to formspree as well, for instant reply
+        // pull interests out of label text for checked inputs (ugly!)
+        var interests = $("#interests input[type=checkbox]:checked").map(function() {
+          return $('label[for="'+this.id+'"]').text();
+        }).get().join();
+        $.ajax({
+          url: "https://formspree.io/info@opensourceactivism.tech", 
+          method: "POST",
+          data: {
+              name: $('input[name=FNAME]').val()+' '+$('input[name=LNAME]').val(),
+              email: $('input[name=EMAIL]').val(),
+              organization: $('input[name=ORGNAME]').val(),
+              interest: interests,
+              message: $('textarea[name=message]').val(),
+          },
+          dataType: "json",
+        });
     });
     </script>
 ---
