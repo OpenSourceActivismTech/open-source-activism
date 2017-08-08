@@ -2,6 +2,7 @@
 layout: page
 title: Text Power
 headline: Messaging flows for campaigns and organizations
+back_link: <a href="../">Tools</a>
 ---
 
 ## Interactive chatbots for activism 

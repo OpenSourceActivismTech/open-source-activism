@@ -166,6 +166,10 @@
 				@include vendor('display', 'flex');
 				@include vendor('align-items', 'center');
 				@include vendor('flex-direction', 'row');
+
+				&.padding-top-reset {
+					padding-top: 0;
+				}
 			}
 
 			.image {
@@ -183,6 +187,10 @@
 				&.square {
 					border-radius: 0;
 					img { border-radius: 0; }
+				}
+
+				&.width-auto {
+					width: auto;
 				}
 			}
 
