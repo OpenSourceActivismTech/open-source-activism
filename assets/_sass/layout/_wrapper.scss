@@ -208,6 +208,9 @@
 
 				.image {
 					margin: 0 0 _size(element-margin) _size(section-spacing, large);
+					.caption {
+						text-align: right;
+					}
 				}
 			}
 
