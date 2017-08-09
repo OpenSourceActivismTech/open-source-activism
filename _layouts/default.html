@@ -18,7 +18,7 @@
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="OpenSourceActivism" />
         <meta property="og:description"        content="{{page.description}}" />
-        <meta property="og:image"              content="{%if page.image%}{{page.image}}{%else%}{{site.url}}{{site.baseurl}}/assets/images/fb-header.png?d={{site.time | date: '%s'}}{%endif%}" />
+        <meta property="og:image"              content="https://opensourceactivism.tech/{%if page.image%}{{page.image}}{%else%}assets/images/fb-header.png?d={{site.time | date: '%s'}}{%endif%}" />
 
         {% if page.extra_head %}
             {{page.extra_head}}
